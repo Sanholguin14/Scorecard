@@ -1,6 +1,6 @@
 /* Los marcadores de build y de lista de archivos los reemplaza scripts/inject-sw.mjs al hacer build. */
-const CACHE = 'scorecard-mwnkkv6b';
-const PRECACHE = ["./","./apple-touch-icon.png","./icon-192.png","./icon-512.png","./icon-maskable-512.png","./index-CToinu_q.css","./index-gmket_xP.js","./index.html","./libre-caslon-display-latin-400-normal-BbfEE5V2.woff","./libre-caslon-display-latin-400-normal-n_DgBRfq.woff2","./libre-caslon-text-latin-400-italic-C1OAqZ6C.woff","./libre-caslon-text-latin-400-italic-snTzlHlN.woff2","./libre-caslon-text-latin-400-normal-CfldDPV-.woff2","./libre-caslon-text-latin-400-normal-WtjoQ5sB.woff","./libre-caslon-text-latin-700-normal-B3n-DWsl.woff","./libre-caslon-text-latin-700-normal-D1WVYPaO.woff2","./manifest.webmanifest"];
+const CACHE = 'scorecard-mwnlc4p1';
+const PRECACHE = ["./","./apple-touch-icon.png","./icon-192.png","./icon-512.png","./icon-maskable-512.png","./index-HyOd1TG0.css","./index-ViyxSa80.js","./index.html","./libre-caslon-display-latin-400-normal-BbfEE5V2.woff","./libre-caslon-display-latin-400-normal-n_DgBRfq.woff2","./libre-caslon-text-latin-400-italic-C1OAqZ6C.woff","./libre-caslon-text-latin-400-italic-snTzlHlN.woff2","./libre-caslon-text-latin-400-normal-CfldDPV-.woff2","./libre-caslon-text-latin-400-normal-WtjoQ5sB.woff","./libre-caslon-text-latin-700-normal-B3n-DWsl.woff","./libre-caslon-text-latin-700-normal-D1WVYPaO.woff2","./manifest.webmanifest"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
